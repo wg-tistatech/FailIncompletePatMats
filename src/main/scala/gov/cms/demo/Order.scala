@@ -15,10 +15,10 @@ object Order {
       case EmptyEntry =>
         true
 
-      /* Removing the default case causes a non-exhaustive pattern matching warning
+      /* Removing the default case causes a non-exhaustive pattern matching warning*/
       case _: Entry =>
         false
-      */
+
     }
 
   }
