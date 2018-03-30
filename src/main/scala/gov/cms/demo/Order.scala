@@ -16,8 +16,8 @@ object Order {
         true
 
       /* Removing the default case causes a non-exhaustive pattern matching warning*/
-      case _: Entry =>
-        false
+      /*case _: Entry =>
+        false*/
 
     }
 
