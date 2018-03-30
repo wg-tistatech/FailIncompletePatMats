@@ -15,8 +15,10 @@ object Order {
       case EmptyEntry =>
         true
 
-      //case _: Entry =>
-      //  false
+      /* Removing the default case causes a non-exhaustive pattern matching warning
+      case _: Entry =>
+        false
+      */
     }
 
   }
