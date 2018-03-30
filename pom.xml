@@ -2,24 +2,24 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>gov.cms</groupId>
   <artifactId>fail-incomplete-patmats</artifactId>
+
   <version>SNAPSHOT-0.1</version>
-  <name>${project.artifactId}</name>
-  <description>My wonderfull scala app</description>
-  <inceptionYear>2015</inceptionYear>
-  <licenses>
-    <license>
-      <name>My License</name>
-      <url>http://....</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
+
+  <name>Fail Incomplete Pattern Matches</name>
 
   <properties>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
     <encoding>UTF-8</encoding>
-    <scala.version>2.11.5</scala.version>
+    <project.root>${project.basedir}</project.root>
+    <project.encoding>UTF-8</project.encoding>
+    <project.mainClass>undefined</project.mainClass>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <java.version>1.8</java.version>
+    <scala.version>2.11.8</scala.version>
     <scala.compat.version>2.11</scala.compat.version>
+    <scalatest.version>3.0.1</scalatest.version>
+    <log4s.version>1.3.6</log4s.version>
+    <junit.version>4.12</junit.version>
   </properties>
 
   <dependencies>
@@ -28,7 +28,11 @@
       <artifactId>scala-library</artifactId>
       <version>${scala.version}</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.log4s</groupId>
+      <artifactId>log4s_${scala.compat.version}</artifactId>
+      <version>${log4s.version}</version>
+    </dependency>
     <!-- Test -->
     <dependency>
       <groupId>junit</groupId>
