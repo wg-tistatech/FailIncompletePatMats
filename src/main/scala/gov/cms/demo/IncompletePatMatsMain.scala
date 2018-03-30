@@ -26,11 +26,13 @@ object IncompletePatMatsMain {
       val lines: List[String] = Source.fromFile(filename).getLines.toList
 
     } catch {
+
       case ioe: IOException =>
-        logger.error(ioe)
+        logger.error(ioe.toString)
         None
+
       case fnf: FileNotFoundException =>
-        logger.error(fnf)
+        logger.error(fnf.toString)
         None
     }
   }

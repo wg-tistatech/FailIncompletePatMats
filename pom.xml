@@ -71,9 +71,13 @@
             </goals>
             <configuration>
               <args>
-                <arg>-make:transitive</arg>
+                <!--arg>-make:transitive</arg-->
                 <arg>-dependencyfile</arg>
                 <arg>${project.build.directory}/.scala_dependencies</arg>
+                <arg>-unchecked</arg>
+                <arg>-deprecation</arg>
+                <arg>-feature</arg>
+                <arg>-Xfatal-warnings</arg>
               </args>
             </configuration>
           </execution>
